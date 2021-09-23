@@ -39,8 +39,14 @@ let makeArray = function() {
  * @returns {string} - Total salary of users with a dollar sign
  */
  let calcSalary = function(arr) {
-  let filteredEarn = arr.filter(elem => (typeof elem === 'number'))
+  let filteredEarn = arr.filter(Boolean)
   let sum = filteredEarn.reduce((a, b) => a + b, 0)
   return `The sum is ${sum}`
 }
 console.log(calcSalary(makeArray(userInfo)));
+console.log(calcSalary([1,3,44,55,undefined, null, 55,77]));
+console.log(calcSalary([1,3,44,55,null, false, 55,77]));
+console.log(calcSalary([133,321,414,55,2323, true, 55,77]));
+console.log(calcSalary([1,-2,3434,undefined,false, null, 67,100]));
+console.log(calcSalary([1,-100,undefined,undefined, null, 3434,false]));
+
