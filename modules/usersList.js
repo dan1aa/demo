@@ -1,6 +1,6 @@
 /**
  * Users list
- * @type {Map<String, Object>}
+ * @type {Map<string, object>}
  */
  const users = new Map();
  users.set("1", { firstName: "Alice", earnings: 4000 });
