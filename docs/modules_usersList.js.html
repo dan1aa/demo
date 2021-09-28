@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: modules/usersList.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,39 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: modules/usersList.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * Users list
+ * @type {Map&lt;string, object>}
+ * @param {String} - name
+ * @param {String} - id
+ * @param {Number} - earning
+ * @param {Number} - earnings
+ */
+ const users = new Map();
+ users.set("1", { firstName: "Alice", earnings: 4000 });
+ users.set("2", { firstName: "Madison", earning: 0 });
+ users.set("3", { firstName: "Zaya", earnings: 12000 });
+ users.set("4", { firstName: "Brendon", earning: -1 });
+ users.set("5", { firstName: "Ted", donations : 15500 });
+ users.set("6", { firstName: "Brian" });
+ users.set("7", { firstName: "Zelda", earning: 20000 });
+ users.set("8", { firstName: "Brian", earning: null});
+ users.set("9", { firstName: "Brian", earning: 2000, earnings: 0});
+ users.set("10", { firstName: "Ted", earning: undefined});
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+ export let usersList = Object.fromEntries(users)
+</code></pre>
+        </article>
+    </section>
 
 
 
