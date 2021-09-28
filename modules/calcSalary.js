@@ -1,8 +1,8 @@
 import usersList from "./usersList.js";
 /**
  * calcSalary
- * @param {array} id
- * @returns {number} - salary of users
+ * @param {Array} id
+ * @returns {Number} - salary of users
  */
 
 let calcSalary = function (usersId) {

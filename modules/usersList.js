@@ -1,6 +1,10 @@
 /**
  * Users list
  * @type {Map<string, object>}
+ * @param {String} - name
+ * @param {String} - id
+ * @param {Number} - earning
+ * @param {Number} - earnings
  */
  const users = new Map();
  users.set("1", { firstName: "Alice", earnings: 4000 });
