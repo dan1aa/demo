@@ -19,7 +19,7 @@ console.log(calcSalary([NaN]));
 /**
  * testValues
  * @description - function that doing tests
- * @returns {string} - if tests passed or failed
+ * @returns {string} - are tests passed or failed
  */
 
 function testValues() {
