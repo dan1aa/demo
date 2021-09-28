@@ -7,7 +7,7 @@ import usersList from "./usersList.js";
 
 let calcSalary = function (usersId) {
     if (!(usersId instanceof Array) || !usersId.length) {
-        return new Error('Ooops! Maybe your data is empty or not an array!')
+        return 'Ooops! Maybe your data is empty or not an array!'
     }
     else {
         let sum = 0;
@@ -20,7 +20,7 @@ let calcSalary = function (usersId) {
             }
         }
         catch {
-            return new Error('Calculate error!')
+            return 'Calculate Error'
         }
         return sum;
     }
