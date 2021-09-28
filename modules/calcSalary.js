@@ -14,8 +14,8 @@ let calcSalary = function (usersId) {
         try {
             for(let i = 0; i < usersId.length; i++) {
                 let currentUser = usersList[usersId[i]]
-                currentUser.earning = currentUser.earning === undefined ? 0 : currentUser.earning
-                currentUser.earnings = currentUser.earnings === undefined ? 0 : currentUser.earnings
+                currentUser.earning = !currentUser.earning ? 0 : currentUser.earning
+                currentUser.earnings = !currentUser.earnings ? 0 : currentUser.earnings
                 sum += currentUser.earning + currentUser.earnings
             }
         }
