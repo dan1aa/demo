@@ -18,7 +18,4 @@
  users.set("9", { firstName: "Brian", earning: 2000, earnings: 0});
  users.set("10", { firstName: "Ted", earning: undefined});
 
- let usersList = Object.fromEntries(users)
-
-
- export default usersList;
+ export let usersList = Object.fromEntries(users)

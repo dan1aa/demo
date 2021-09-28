@@ -1,11 +1,11 @@
-import usersList from "./usersList.js";
+import {usersList} from "./usersList.js";
 /**
  * calcSalary
  * @param {Array} id
  * @returns {Number} - salary of users
  */
 
-let calcSalary = function (usersId) {
+export let calcSalary = function (usersId) {
     if (!(usersId instanceof Array) || !usersId.length) {
         return 'Ooops! Maybe your data is empty or not an array!'
     }
@@ -25,4 +25,3 @@ let calcSalary = function (usersId) {
         return sum;
     }
 }
-export default calcSalary;
